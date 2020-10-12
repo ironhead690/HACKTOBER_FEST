@@ -1,0 +1,15 @@
+method1: 0(nlogn)
+
+  public static int kthSmallest(Integer[] arr, int k) 
+    { 
+        Arrays.sort(arr); 
+        return arr[k - 1]; 
+    }
+
+
+ method 2: heap
+
+
+
+
+
