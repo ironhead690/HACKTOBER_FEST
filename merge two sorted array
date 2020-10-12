@@ -1,0 +1,20 @@
+  int i=0,j=0,k=0;
+  while(i<asize && j<bsize)
+  {
+    if(a[i]<b[j])
+      mergedArray[k++]=a[i++];
+    else
+      mergedArray[k++]=b[j++];
+  }
+  if(i>=asize)
+  {
+    while(j<bsize)
+      mergedArray[k++]=b[j++];
+  }
+  if(j>=bsize)
+  {
+    while(i<asize)
+      mergedArray[k++]=a[i++];
+  }
+  return mergedArray;
+}
